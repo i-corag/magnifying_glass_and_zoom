@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 1em 2em;
+}
+.imagenes {
+  position: relative;
+}
+
+h3 {
+  text-align: center;
+}
+
+#myimage {
+  border: 1px solid #d4d4d4;
+}
+
+.img-zoom-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  /*border: 1px solid black;
+  /*set the size of the lens:*/
+  width: 100px;
+  height: 100px;
+  background-color: #d4d4d4;
+  opacity: 0.5;
+  visibility: hidden;
+}
+
+.img-zoom-result {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 400px;
+  height: 400px;
+  visibility: hidden;
+}
+
+#expandView {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  /*display: none;*/
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+}
+
+#expandView div {
+  display: flex;
+  gap: 1em;
+}
